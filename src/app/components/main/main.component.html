@@ -1,0 +1,16 @@
+<div class="container">
+<div class="flex flex-wrap">
+    <div class="Knobs border-round block" *ngFor="let data of dat" >
+       
+        <h3>{{data.lable}}</h3>
+
+    <p-knob  [ngModel]="data.value"  [readonly]="true" [size]="233" valueColor="lightgreen"
+    rangeColor="lightgray"></p-knob>
+
+</div>
+</div>
+<div class="chart">
+    <p-chart type="line" [data]="data" [options]="options"></p-chart>
+
+</div>
+</div>

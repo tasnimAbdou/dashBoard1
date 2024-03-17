@@ -1,0 +1,25 @@
+    
+<p-toolbar>
+    <div class="p-toolbar-group-start flex">
+
+        <p-menu #menu [model]="items"></p-menu>
+<p-button class="xl:hidden sm:block" (click)="menu.toggle($event)" icon="pi pi-bars" label="DashBoard" styleClass="bg-purple-800 border-gray-100  text-purple-50  " ></p-button>
+        <p-button focus label="DashBoard" class="sm:hidden xl:block" styleClass="surface-50 border-gray-100  text-purple-900  " ></p-button>
+
+    </div>
+    <div class="p-toolbar-group-center sm:hidden xl:block flex ">
+        <p-button active label="Modern" styleClass="surface-100   text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 focus:text-purple-100 focus:bg-purple-900  " [rounded]="true" ></p-button>
+        <p-button label="lastMonth" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 "  [rounded]="true" ></p-button>
+        <p-button active label="Modern" styleClass="surface-100   text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 focus:text-purple-100 focus:bg-purple-900  " [rounded]="true" ></p-button>
+        <p-button label="lastMonth" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 "  [rounded]="true" ></p-button>
+        <p-button label="lastMonth" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 "  [rounded]="true" ></p-button>
+    </div>
+        <div class="p-toolbar-group-end sm:hidden xl:block flex">
+         <p-button active label="Modern" styleClass="surface-100   text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 focus:text-purple-100 focus:bg-purple-900  " [rounded]="true" ></p-button>
+         <p-button label="lastMonth" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 "  [rounded]="true" ></p-button>
+         <p-button label="last 7-days" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 " [rounded]="true" ></p-button>
+         <p-button label="last 90-days" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 " [rounded]="true" ></p-button>
+    <p-button label="last year" styleClass="surface-100  text-purple-900 border-gray-100 hover:bg-purple-900 hover:text-purple-100 " [rounded]="true" ></p-button>
+
+    </div>
+</p-toolbar>
